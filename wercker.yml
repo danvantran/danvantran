@@ -1,13 +1,13 @@
 box: wercker/default
 build:
-	steps:
-		- arjen/hugo-build@1.1.0
-			version: 0.13
-			theme: casper
-			flags: --buildDrafts=true
+  steps:
+    - arjen/hugo-build@1.1.0
+      version: 0.13
+      theme: casper
+      flags: --buildDrafts=true
 deploy:
-	steps:
-		- duleorlovic/ftp-deploy@1.0.1
-			destination: ftp://danvantran.com
-			username: $USERNAME
-			password: $PASSWORD
+  steps:
+    - duleorlovic/ftp-deploy@1.0.1
+      destination: ftp://danvantran.com
+      username: $USERNAME
+      password: $PASSWORD
