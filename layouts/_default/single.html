@@ -15,12 +15,7 @@
   </nav>
 </header>
 
-
-
 <main class="content" role="main">
-
-
-
 
   <article class="{{.Type}}">
 
@@ -45,11 +40,8 @@
       {{ .Content }}
     </section>
 
-
   <footer class="post-footer">
-
-
-    {{if .Site.Params.authorImage}}
+	{{if .Site.Params.authorImage}}
     <figure class="author-image">
         <a class="img" href="{{.Site.BaseUrl}}" style="background-image: url({{ $baseurl }}{{.Site.Params.authorImage}})"><span class="hidden">{{.Site.Params.author}}'s Picture</span></a>
     </figure>
