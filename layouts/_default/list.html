@@ -2,7 +2,7 @@
 {{ $baseurl := .Site.BaseUrl }}
 
 {{if .Params.cover}}
-	<header class="main-header tag-head" style="background-image: url({{ $baseurl }}{{.Params.cover}})">
+	<header class="main-header tag-head" style="background-image: url({{ $baseurl }}{{.Params.cover}})	`">
 {{else if .Site.Params.cover}}
 	<header class="main-header tag-head" style="background-image: url({{ $baseurl }}{{.Site.Params.cover}})">
 {{else}}
@@ -37,7 +37,5 @@
 
 	{{ partial "pagination.html" $paginator }}
 </main>
-
-
 
 {{ partial "footer.html" . }}
