@@ -4,4 +4,4 @@ build:
     - arjen/hugo-build:
 	  version: 0.13
 	  theme: casper
-	  flags: 
+	  flags: --buildDrafts=true
