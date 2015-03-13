@@ -1,0 +1,21 @@
+{
+	"baseurl": "http://www.danvantran.com/",
+	"languageCode": "en-us",
+	"title": "The Dan Van Tran Experience™",
+	"contentdir": "content",
+	"layoutdir": "layouts",
+	"publishdir": "public_html",
+	"canonifyUrls": true,
+	"taxonomies": {
+		"category": "categories",
+		"tag": "tags"
+	},
+	"params": {
+		"description": "Serving all of your Dan Van Tran needs",
+		"author": "Dan Van Tran"
+	},
+	"metaDataFormat": "json",
+	"permalinks": {
+		"post": "/:year/:month/:title/"
+	}
+}

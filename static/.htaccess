@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.danvantran.com$ [NC]
+RewriteRule ^(.*)$ http://danvantran.com/$1 [R=301,L]
+ErrorDocument 404 /404/index.html

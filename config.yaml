@@ -1,0 +1,33 @@
+---
+author:
+  name: "Dan Van Tran"
+  bio: "a pretty awesome guy"
+baseurl: "http://danvantran.com/"
+canonifyUrls: true
+contentdir: "content"
+copyright: "Copyright © Dan Van Tran · All Rights Reserved"
+disqusShortname: "DanVanTran"
+languageCode: "en-us"
+layoutdir: "layouts"
+metaDataFormat: "yaml"
+params:
+  author: "Dan Van Tran"
+  bio: "a pretty awesome guy"
+  comments: true
+  cover: "/img/baby_dtran.jpg"
+  description: "Serving all of your Dan Van Tran needs"
+  email: "dtran@hardtostun.com"
+  github: "funkdat25z"
+  linkedin: "funkdat25z"
+  logo: "/img/foxy_tran.jpg"
+  authorImage: "/img/danvantran.png"
+  twitter: "funkdat25z"
+permalinks:
+  post: /:year/:month/:filename/
+publishdir: "public_html"
+taxonomies:
+  category: "categories"
+  tag: "tags"
+  series: "series"
+title: "The DVT Experience™"
+---

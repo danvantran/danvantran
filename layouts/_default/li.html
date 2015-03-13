@@ -1,0 +1,34 @@
+{{ $baseurl := .Site.BaseUrl }}
+<article class="post {{ .Type }}">
+    <header class="post-header">
+        <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>{{ .Summary }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        {{if .Site.Params.authorImage }}
+            <img class="author-thumb" src="{{ .Site.BaseUrl }}{{.Site.Params.authorImage}}" alt="Author image" nopin="nopin" />
+        {{end}}
+        {{if .Site.Params.author}}
+            {{.Site.Params.author}}
+        {{end}}
+        {{if .Params.tags}} re: 
+            {{ range $index, $tag := .Params.tags }}
+                <a href="{{$baseurl}}tags/{{ $tag | urlize }}/">#{{ $tag }}</a>
+            {{ end }}
+        {{end}}
+		{{if .Params.categories}}[  
+			{{ range $index, $category := .Params.categories }}
+                <a href="{{$baseurl}}categories/{{ $category | urlize }}/">{{ $category }}</a>
+			{{ end }}
+			 ]
+        {{end}}
+        <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHtml }}">
+            {{ .Date.Format "2 Jan 2006 15:04:05Z07:00" }}
+        </time>
+    </footer>
+</article>
+
+
+
