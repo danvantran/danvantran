@@ -7,8 +7,21 @@ build:
         flags: --buildDrafts=true
 deploy:
   steps:
-    - pcellis/ftp-deploy-exclude@1.0.1:
+    - bugscal/new-ftp-deploy@0.0.66:
         destination: ftp://danvantran.com/danvantran/public_html
         username: $USERNAME
         password: $PASSWORD
-        exclude-file: "/.git/"#"/archetypes/"#"/content/"#"/data/"#"/layouts/"#"/static/"#"/themes/"#"/.gitignore"#"config.yaml"#"LICENSE.md"#"README.md"#"/wercker.yml"
+        exclude-patterns: [
+          "/.git/",
+          "/archetypes/",
+          "/content/",
+          "/data/",
+          "/layouts/",
+          "/static/",
+          "/themes/",
+          "/.gitignore",
+          "config.yaml",
+          "LICENSE.md",
+          "README.md",
+          "/wercker.yml"
+        ]
