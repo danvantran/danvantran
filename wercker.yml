@@ -7,21 +7,7 @@ build:
         flags: --buildDrafts=true
 deploy:
   steps:
-    - bugscal/new-ftp-deploy@0.0.66:
-        destination: ftp://danvantran.com/danvantran/public_html
+    - duleorlovic/ftp-deploy@1.0.1:
+        destination: ftp://danvantran.com/danvantran/
         username: $USERNAME
         password: $PASSWORD
-        exclude-patterns: [
-          "/.git/",
-          "/archetypes/",
-          "/content/",
-          "/data/",
-          "/layouts/",
-          "/static/",
-          "/themes/",
-          "/.gitignore",
-          "config.yaml",
-          "LICENSE.md",
-          "README.md",
-          "/wercker.yml"
-        ]
