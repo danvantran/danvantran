@@ -1,8 +1,8 @@
 ---
 categories: ["development"]
 comments: true
-date: 2015-03-16T00:02:15-04:00
-draft: true
+date: 2015-03-16T22:00:15-04:00
+draft: false
 image: ""
 imageheight: 100%
 tags: ["video.js","javascript","hugo"]
