@@ -1,0 +1,11 @@
+<!-- { { < videojs video_id video_src video_type width height poster > } } -->
+<!-- args: video_id, video_src, video_type, width, height, poster -->
+<div style="width: {{ index .Params 3 }}; height: {{ index .Params 4 }};">
+	<video id="{{ index .Params 0 }}" class="video-js vjs-default-skin"
+	  controls preload="auto" width="auto" height="auto"
+	  poster="{{ index .Params 5 }}"
+	  data-setup='{}'>
+	 <source src="{{ index .Params 1 }}" type='video/{{ index .Params 2 }}' />
+	 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+	</video>
+</div>
