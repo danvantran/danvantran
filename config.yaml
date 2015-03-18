@@ -18,6 +18,7 @@ params:
   description: "Serving all of your Dan Van Tran needs"
   email: "dtran@hardtostun.com"
   github: "funkdat25z"
+  googleAnalyticsUserID: "UA-60894719-1"
   linkedin: "funkdat25z"
   logo: "/img/foxy_tran.jpg"
   authorImage: "/img/danvantran.png"
