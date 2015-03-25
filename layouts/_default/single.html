@@ -90,7 +90,7 @@
 			document.write("<h4>Related posts:</h4>");
 			document.write("<ul>");
 		}
-		for(index = 0; index < related.length; index++) {
+		for(index = 0; index < Math.min(related.length, 5); index++) {
 			document.write(related[index]);
 		}
 		if(related.length > 0) {

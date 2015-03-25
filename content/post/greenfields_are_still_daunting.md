@@ -20,8 +20,8 @@ Reflecting on my past projects, both successful and failed, I quickly realized t
 	  * [Tom and Chris Take On](http://www.drunkenarts.com/music/tom_and_chris_take_on_v2.mp3) - a podcast theme for my friend
    * Remixes
       * [Fireflies(8-bit remix)](http://www.drunkenarts.com/music/Dan%20Tran%20-%20Fireflies.mp3) - I loved working with these sound patches
-      * [Xenogears - Dajil (Street Urchin Mix)](http://www.drunkenarts.com/music/DJ_FunkDAT_-_Xenogears_-_Dajil(Street_Urchin_Mix).mp3) - I wanted to experiment with Middle Eastern sound palettes
-      * [Jungle Boogie(Dirty Shag Mix)](http://www.drunkenarts.com/music/Dan.Tran_Jungle.Boogie(Dirty.Shag.Mix).Instrumental.mp3) - a random idea I had that worked out
+      * [Xenogears - Dajil (Street Urchin Mix)](http://www.drunkenarts.com/music/DJ_FunkDAT_-_Xenogears_-_Dajil(Street_Urchin_Mix).mp3 - I wanted to experiment with Middle Eastern sound palettes
+      * [Jungle Boogie(Dirty Shag Mix)](http://www.drunkenarts.com/music/Dan.Tran_Jungle.Boogie(Dirty.Shag.Mix).Instrumental.mp3 - a random idea I had that worked out
 
 but there are large number of other projects that I would love to pursue but I just don't have the patience to deal with my lack of skills in order to actually complete(or in many cases even start) them. In other words, I don't feel that the time investment to develop the ability to create what I've envisioned is worth it. I've encountered this with my music writing, my guitar playing, my cinematography, etc.
 
