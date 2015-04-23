@@ -28,6 +28,6 @@ There were two notable times in my life where I escaped death. At the very least
 
 I went through a divorce that, as they often do, took me by surprise. I've mostly recovered but I'm proud of how little I let that affect my life and my relationships.
 
-Yeah, I've walked through my share of walls. At this point, I'm almost certain that [noclipping](https://en.wikipedia.org/wiki/Noclip_mode) is permanently enabled for me. ^_^;; I attribute most of my success to hard work and dedication to pursuing my goals, pure and simple. The rest is luck, especially with regards to meeting kind-hearted, good people. I've been fortunate enough to encounter so many of those, and I reflect daily on the great fortunate I've had to have them in my life.
+Yeah, I've walked through my share of walls. At this point, I'm almost certain that [noclipping](https://en.wikipedia.org/wiki/Noclip_mode) is permanently enabled for me. ^_^;; I attribute most of my success to hard work and dedication to pursuing my goals, pure and simple. The rest is luck, especially with regards to meeting kind-hearted, good people. I've been fortunate enough to encounter so many of those, and I reflect daily on how grateful I am to have them in my life.
 
 So f your walls. I'll be the one leaving Dan-sized holes in them. THAT SOUNDS WRONG BUT YOU KNOW WHAT I MEAN. ^_^;;
