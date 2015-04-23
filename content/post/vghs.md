@@ -5,7 +5,7 @@ date: 2015-04-15T22:50:21-04:00
 draft: false
 image: ""
 imageheight: 100%
-tags: ["tv","videogames","webseries"]
+tags: ["tv","games","webseries"]
 title: Video Game High School on Netflix
 ---
 
