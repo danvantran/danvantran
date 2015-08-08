@@ -1,0 +1,24 @@
+---
+categories: ["lifestyle"]
+comments: true
+date: 2015-08-08T13:34:26-04:00
+draft: false
+image: ""
+imageheight: 100%
+tags: ["life","work","philosophies"]
+title: Being your best self (pt.1)
+---
+
+#### Always aspire to be the best version of yourself
+
+This is a lesson that I learned early on and that I will struggle with perpetually. There's always more that you can do and there will always be something to be proud of.<!--more--> Being born to Asian parents with very traditional values, I was always told in so many ways that I wasn't "good enough". There were two overall ways that this could have gone. I could have become resentful and bitter, always carrying a deep sense of self-pity. Alternatively, and this is the outcome I fortunately experienced, I could try to see past the *what* of their methods and work to understand the *why*. I quickly determined that this was their way of developing me into a successful person, where success was defined by them. Realizing this, I learned that it would be best to determine what *I* thought success was in the context of my life, and to strive for that instead.
+
+One of the first goals I remember holding myself to was to learn as much about everything as I possibly could, with the ultimate goal of improving the world in some way (or at least leaving it better off than how I found it). Shortly after that, I realized that I had a limited amount of time to work with, and so I need to focus my attention to a narrower set of fields. I fell in love with logic puzzles, creative thinking, and art. I also found that I was passionate about leading and teaching. I would rally my two younger sisters and we would make these stupid little skits that we'd record using my parents' giant VHS camcorder(aside: I remember them paying well over $2k for that thing -- yikes!). I'd also (often forcibly :) ) teach them random things, like how to play baseball or draw cartoon characters. I organized us to produce a daily "newspaper" for a few months, which we distributed to ourselves and my parents. We crafted board games, which we play-tested with each other. I just loved what we could achieve as a team.
+
+I applied for my first job as soon as I could get my working papers when I turned 15-ish. Even though it was a simple job at a deli counter in a health food supermarket making about minimum wage, I loved that job and I worked really hard to improve at it. I also took on additional responsibilities, helping out with the register, stocking, etc. I started a little art series where I made sculptures out of the containers we had, releasing a new piece every week or two. It was a prestigious job but I wanted to do the best job that I could, because it was the job that I had.
+
+Eventually, I found out that my school was hiring "Student Network Operations Center Coordinators", which paid a stipend in the summers and gave you technical privileges/responsibilities year-round. I took that role as well, which I held until graduation. I knew that it was a "do the work that we don't want to do ourselves" sort of job (creating images for machines and ghosting every computer on campus, troubleshooting hardware issues, auditing and installing software and RAM, cleaning up stock rooms, etc.), but it was a great opportunity to learn and I strived for excellence in it.
+
+After high school, my uncle helped me to get an internship with the Management of Information Systems department at the Associated Press. Their primary project for me was to clean up a mess room of theirs, where they had been dumping electronics and components for decades, create an inventory spreadsheet and organize everything onto shelves and into boxes. I completed this within a week or so, thinking that this was just the "warm-up". It turned out that they had no other major projects in mind for me, and they had me sitting in the room "looking busy". I found a couple of opportunities to do other things (e.g. setting up Dragon NaturallySpeaking for my uncle, who is afflicted with M.S., and setting up machines in a boardroom for a demo for executives), but I was disappointed with the level of challenge of the projects. For better or worse, I was hit by a car that summer as I was crossing in front of Radio City Music Hall on the way to work one day, so I spent the rest of the summer bed-ridden. However, I still wish that I was able to do more with that internship. I greatly appreciate the time I got to spend with my uncle though. :)
+
+I'm going to break this post into at least two posts, as it's starting to get long. Apparently I had more thoughts than I realized. More to come.
