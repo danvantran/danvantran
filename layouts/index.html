@@ -21,22 +21,46 @@
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
-{{ partial "recent-reading.html" . }}
+{{ if eq .Paginator.PageNumber 1 }}
+<div id="main_content">
+	<div id="recent-reading_content">
+		{{ partial "recent-reading.html" . }}
+	</div>
 
+	<div id="entries_content">
+		<main id="content" class="content" role="main">
+
+    		{{ $paginator := .Paginator }}
+
+    		<div class="extra-pagination inner">
+       			{{ partial "pagination.html" $paginator }}
+    		</div>
+
+    		{{ range where .Paginator.Pages "Type" "post" }}
+        		{{ .Render "li" }}
+    		{{ end }}
+
+    		{{ partial "pagination.html" $paginator }}
+
+		</main>
+	</div>
+</div>
+{{ else }}
 <main id="content" class="content" role="main">
 
     {{ $paginator := .Paginator }}
 
     <div class="extra-pagination inner">
-        {{ partial "pagination.html" $paginator }}
+       	{{ partial "pagination.html" $paginator }}
     </div>
 
-    {{ range where .Paginator.Pages "Type" "post" }}
+	{{ range where .Paginator.Pages "Type" "post" }}
         {{ .Render "li" }}
     {{ end }}
 
     {{ partial "pagination.html" $paginator }}
 
 </main>
+{{ end }}
 
 {{ partial "footer.html" . }}

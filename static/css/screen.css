@@ -841,16 +841,31 @@ body:not(.post-template) .post-title {
     line-height: 1.5em;
 }
 
-.recent-reading {
+#main_content {
+	margin: 0px auto;
+	width: 100%;
+}
+
+#recent-reading_content {
 	float: left;
+	margin: 0;
+	width: 25%;
+}
+
+#entries_content {
+	float: left;
+	margin: 0;
+	width: 75%;
+}
+
+.recent-reading {
     font-size: 0.9em;
 }
 
 .recent-reading {
     position: relative;
-    width: 80%;
     max-width: 500px;
-    margin: 2rem auto;
+    margin: 4rem auto;
     padding-bottom: 2rem;
     word-break: break-word;
     hyphens: auto;
@@ -924,7 +939,8 @@ article.recent-reading:after {
 
 .recent-reading-show-more {
 	width: 80%;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Merriweather", serif;
+	font-size: 1.4rem;
 }
 
 .recent-reading-show-more  a {
