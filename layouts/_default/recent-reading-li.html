@@ -1,18 +1,12 @@
 {{ $baseurl := .Site.BaseURL }}
-<article class="post {{ .Type }}">
-    <header class="post-header">
-        <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+<article class="recent-reading {{ .Type }}">
+    <header class="recent-reading-header">
+        <h6 class="recent-reading-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h6>
     </header>
-    <section class="post-excerpt">
+    <section class="recent-reading-excerpt">
         <p>{{ .Summary }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
     </section>
-    <footer class="post-meta">
-        {{if .Site.Params.authorImage }}
-            <img class="author-thumb" src="{{ .Site.BaseURL }}{{.Site.Params.authorImage}}" alt="Author image" nopin="nopin" />
-        {{end}}
-        {{if .Site.Params.author}}
-            {{.Site.Params.author}}
-        {{end}}
+    <footer class="recent-reading-meta">
         {{if .Params.tags}} re: 
             {{ range $index, $tag := .Params.tags }}
                 <a href="{{$baseurl}}tags/{{ $tag | urlize }}/">#{{ $tag }}</a>
@@ -24,11 +18,9 @@
 			{{ end }}
 			 ]
         {{end}}
-        <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+		<br />
+        <time class="recent-reading-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
             {{ .Date.Format "2 Jan 2006 15:04:05Z07:00" }}
         </time>
     </footer>
 </article>
-
-
-

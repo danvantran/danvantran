@@ -2,33 +2,34 @@
 {{ $baseurl := .Site.BaseURL }}
 
 {{if .Params.image}}
-<header class="main-header post-head" style="background-image: url({{ $baseurl }}{{.Params.image}})">
+<header class="main-header post-head" style="background-image: url({{ $baseurl }}{{.Params.image}}){{if .Params.imageheight}}; height: {{ .Params.imageheight}}{{end}}">
   <nav class="main-nav overlay clearfix">
 {{else}}
 <header class="main-header post-head no-cover">
   <nav class="main-nav clearfix">
 {{end}}
     <a class="back-button icon-arrow-left" href="{{ .Site.BaseURL }}">Home</a>
-    <a class="subscribe-button icon-feed" href="{{ .RSSLink }}">Subscribe</a>
+	{{if .RSSLink}}
+		<a class="subscribe-button icon-feed" href="{{ .RSSLink }}">Subscribe</a>
+	{{end}}
   </nav>
 </header>
 
-
-
 <main class="content" role="main">
 
-
-
-
-  <article class="{{.Type}}">
+  <article class="post">
 
     <header class="post-header">
         <h1 class="post-title">{{.Title}}</h1>
         <section class="post-meta">
-          <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHtml }}">
-            {{ .Date.Format "Jan 2, 2006" }}
+          <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+            {{ .Date.Format "Jan 2, 2006 15:04:05Z07:00" }}
           </time>
 
+		 {{ range .Params.categories }}
+		 <span class="post-tag"><a href="{{ $baseurl }}categories/{{ . | urlize }}/">{{ . }}</a></span>
+		 {{ end }}
+		 
          {{ range .Params.tags }}
           <span class="post-tag small"><a href="{{ $baseurl }}tags/{{ . | urlize }}/">#{{ . }}</a></span>
          {{ end }}
@@ -39,13 +40,10 @@
       {{ .Content }}
     </section>
 
-
   <footer class="post-footer">
-
-
-    {{if .Site.Params.logo}}
+	{{if .Site.Params.authorImage}}
     <figure class="author-image">
-        <a class="img" href="{{.Site.BaseURL}}" style="background-image: url({{ $baseurl }}{{.Site.Params.logo}})"><span class="hidden">{{.Site.Params.author}}'s Picture</span></a>
+        <a class="img" href="{{.Site.BaseURL}}" style="background-image: url({{ $baseurl }}{{.Site.Params.authorImage}})"><span class="hidden">{{.Site.Params.author}}'s Picture</span></a>
     </figure>
     {{end}}
 
@@ -63,11 +61,47 @@
         </div>
     </section>
 
-
+	<section class="post-meta">
+		<br />
+		<script>
+		var related = [];
+		</script>
+		{{ $categories := .Params.categories }}
+		{{ $thistitle := .Title }}
+		{{ range $taxonomyname, $taxonomy := .Site.Taxonomies.categories }}
+			{{ range $categoryname := $categories }}
+				{{ if and (eq $categoryname $taxonomyname) (gt $taxonomy.Pages 1) }}
+					{{ range $taxonomy.Pages }}
+						{{ if ne .LinkTitle $thistitle }}
+							<script>
+							var relatedlink = "<li hugo-nav=\"{{.RelPermalink}}\"><a href=\"{{.Permalink}}\">{{.LinkTitle}}</a></li>";
+							position = related.indexOf(relatedlink);
+							if(!~position) {
+								related.push(relatedlink);
+							}
+							</script>
+						{{ end }}
+					{{ end}}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+		<script>
+		if(related.length > 0) {
+			document.write("<h4>Related posts:</h4>");
+			document.write("<ul>");
+		}
+		for(index = 0; index < Math.min(related.length, 5); index++) {
+			document.write(related[index]);
+		}
+		if(related.length > 0) {
+			document.write("</ul>");
+		}
+		</script>
+	</section>
     
     <section class="share">
       <h4>Share this post</h4>
-      <a class="icon-twitter" href="https://twitter.com/share?text={{ .Title | safeHtml}}&amp;url={{ .Permalink }}"
+      <a class="icon-twitter" href="https://twitter.com/share?text={{ .Title | safeHTML}}&amp;url={{ .Permalink }}"
           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
           <span class="hidden">Twitter</span>
       </a>

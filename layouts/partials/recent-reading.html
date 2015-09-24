@@ -1,0 +1,50 @@
+{{ if eq .Paginator.PageNumber 1 }}
+	<!--sidebar start-->
+	<aside>
+		<div id="sidebar" class="recent-reading">
+			<!-- sidebar menu start-->
+			<ul>
+				<h5>Recent Reading</h5>
+				<!-- default options in the config start -->
+				{{ $currentNode := . }}
+				{{ range .Site.Menus.readingList }}
+					{{ if .HasChildren }}
+						<li class="sub-menu{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">
+						<a href="javascript:;" class="">
+							{{ .Pre }}
+							<span>{{ .Name }}</span>
+							<span class="menu-arrow arrow_carrot-right"></span>
+						</a>
+						<ul class="sub">
+							{{ range .Children }}
+								<li{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL}}"> {{ .Name }} </a> </li>
+							{{ end }}
+						</ul>
+						</li>
+					{{else}}
+						<li>
+						<a class="" href="{{.URL}}">
+							{{ .Pre }}
+							<span>{{ .Name }}</span>
+						</a>
+						</li>
+					{{end}}
+				{{end}}
+				<!-- default options in the config end -->
+
+				<!-- recently read items pagination start -->
+				{{ range first 10 (where .Paginator.Pages "Type" "recent-reading") }}
+					{{ if eq .Type "recent-reading" }}
+						{{ .Render "recent-reading-li" }}
+					{{ end }}
+				{{ end }}
+				<!-- recently read items pagination end -->
+				<div class="recent-reading-show-more">
+					<a href="recent-reading">Show more...</a>
+				</div>
+			</ul>
+			<!-- sidebar menu end-->
+		</div>
+	</aside>
+	<!--sidebar end-->
+{{ end }}

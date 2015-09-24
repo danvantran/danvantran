@@ -841,6 +841,99 @@ body:not(.post-template) .post-title {
     line-height: 1.5em;
 }
 
+.recent-reading {
+	float: left;
+    font-size: 0.9em;
+}
+
+.recent-reading {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding-bottom: 2rem;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+article.recent-reading {
+	border-bottom: #EBF2F6 1px solid;
+}
+
+article.recent-reading:after {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: #E7EEF2 1px solid;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    background: #FFF;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    box-shadow: #FFF 0 0 0 5px;
+}
+
+.recent-reading-header {
+	margin-bottom: 1.0rem;
+}
+
+.recent-reading-title {
+    margin-bottom: 0;
+}
+
+.recent-reading-title a {
+	text-decoration: none;
+}
+
+.recent-reading-meta {
+    display: block;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25rem;
+    line-height: 2.2rem;
+    color: #9EABB3;
+}
+
+.recent-reading-meta a {
+    color: #9EABB3;
+    text-decoration: none;
+}
+
+.recent-reading-meta a:hover {
+    text-decoration: underline;
+}
+
+.recent-reading-date {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.recent-reading-excerpt p {
+    margin: 0;
+    line-height: 1.0em;
+}
+
+.sidebar .recent-reading:after {
+    display: none;
+}
+
+.recent-reading-show-more {
+	width: 80%;
+	font-family: "Open Sans", sans-serif;
+}
+
+.recent-reading-show-more  a {
+    text-decoration: none;
+}
+
+.recent-reading-show-more  a:hover {
+    text-decoration: underline;
+}
 
 /* ==========================================================================
    5. Single Post - When you click on an individual post

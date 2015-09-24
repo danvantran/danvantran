@@ -1,14 +1,14 @@
 {{ partial "header.html" . }}
 
 {{if .Site.Params.cover}}
-<header class="main-header " style="background-image: url({{.Site.BaseUrl}}{{.Site.Params.cover}})">
+<header class="main-header " style="background-image: url({{.Site.BaseURL}}{{.Site.Params.cover}})">
 {{else}}
 <header class="main-header no-cover">
 {{end}}
     
     <nav class="main-nav overlay clearfix">
         {{ if .Site.Params.logo }}
-            <a class="blog-logo" href="{{.Site.BaseUrl}}author-profile/about">(╯°□°）╯︵ ┻━┻</a>
+            <a class="blog-logo" href="{{.Site.BaseURL}}author-profile/about">(╯°□°）╯︵ ┻━┻</a>
         {{end}}
 		<a class="subscribe-button icon-feed" href="{{ .RSSLink }}">Subscribe</a>
     </nav>
@@ -21,16 +21,17 @@
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
+{{ partial "recent-reading.html" . }}
 
 <main id="content" class="content" role="main">
 
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+    {{ $paginator := .Paginator }}
 
     <div class="extra-pagination inner">
         {{ partial "pagination.html" $paginator }}
     </div>
 
-    {{ range $index, $page := .Paginator.Pages }}
+    {{ range where .Paginator.Pages "Type" "post" }}
         {{ .Render "li" }}
     {{ end }}
 

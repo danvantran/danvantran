@@ -5,7 +5,7 @@ comments: true
 date: 2015-03-08T17:46:37-04:00
 draft: false
 image: ""
-tags: ["first post"]
+tags: ["firstpost"]
 title: Let's do this thing
 weight: 1
 ---
