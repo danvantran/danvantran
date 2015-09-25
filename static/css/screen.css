@@ -859,16 +859,13 @@ body:not(.post-template) .post-title {
 }
 
 .recent-reading {
-    font-size: 0.9em;
-}
-
-.recent-reading {
     position: relative;
     max-width: 500px;
     margin: 4rem auto;
     padding-bottom: 2rem;
     word-break: break-word;
     hyphens: auto;
+    font-size: 0.85em;
 }
 
 article.recent-reading {
@@ -898,6 +895,7 @@ article.recent-reading:after {
 
 .recent-reading-title {
     margin-bottom: 0;
+    font-size: 1.4rem;
 }
 
 .recent-reading-title a {
@@ -908,7 +906,7 @@ article.recent-reading:after {
     display: block;
     margin: 0;
     font-family: "Open Sans", sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     line-height: 2.2rem;
     color: #9EABB3;
 }

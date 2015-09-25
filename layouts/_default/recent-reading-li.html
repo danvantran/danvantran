@@ -9,8 +9,9 @@
     <footer class="recent-reading-meta">
         {{if .Params.tags}} re: 
             {{ range $index, $tag := .Params.tags }}
-                <a href="{{$baseurl}}tags/{{ $tag | urlize }}/">#{{ $tag }}</a>
+                <a href="{{$baseurl}}tags/{{ $tag | urlize }}/">#{{ $tag }}</a>&nbsp;
             {{ end }}
+            <br />
         {{end}}
 		{{if .Params.categories}}[  
 			{{ range $index, $category := .Params.categories }}
