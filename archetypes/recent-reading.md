@@ -9,6 +9,4 @@ tags: []
 title: "Post title"
 ---
 
-####
-
 <!--more-->
