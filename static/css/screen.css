@@ -862,7 +862,7 @@ body:not(.post-template) .post-title {
 .recent-reading {
     position: relative;
     max-width: 500px;
-    margin: 4rem auto;
+    margin: 4rem auto 2rem auto;
     padding-bottom: 2rem;
     hyphens: auto;
     font-size: 0.85em;
@@ -939,6 +939,7 @@ article.recent-reading:after {
 	width: 80%;
 	font-family: "Open Sans", sans-serif;
 	font-size: 1.2rem;
+	white-space: nowrap;
 }
 
 .recent-reading-show-more  a {

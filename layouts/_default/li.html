@@ -18,11 +18,8 @@
                 <a href="{{$baseurl}}tags/{{ $tag | urlize }}/">#{{ $tag }}</a>
             {{ end }}
         {{end}}
-		{{if .Params.categories}}[  
-			{{ range $index, $category := .Params.categories }}
-                <a href="{{$baseurl}}categories/{{ $category | urlize }}/">{{ $category }}</a>
-			{{ end }}
-			 ]
+		{{if .Params.categories}}
+			[&nbsp;{{ range $index, $category := .Params.categories }}<a href="{{$baseurl}}categories/{{ $category | urlize }}/">{{ $category }}</a>{{ end }}&nbsp;]
         {{end}}
         <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
             {{ .Date.Format "2 Jan 2006 15:04:05Z07:00" }}
