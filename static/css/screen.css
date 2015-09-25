@@ -849,13 +849,14 @@ body:not(.post-template) .post-title {
 #recent-reading_content {
 	float: left;
 	margin: 0;
-	width: 25%;
+	min-width: 25%;
+	max-width: 33%;
 }
 
 #entries_content {
 	float: left;
 	margin: 0;
-	width: 75%;
+	max-width: 67%;
 }
 
 .recent-reading {
@@ -863,7 +864,6 @@ body:not(.post-template) .post-title {
     max-width: 500px;
     margin: 4rem auto;
     padding-bottom: 2rem;
-    word-break: break-word;
     hyphens: auto;
     font-size: 0.85em;
 }
