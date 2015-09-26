@@ -5,7 +5,7 @@ date: 2015-09-26T11:10:49-04:00
 draft: false
 image: ""
 imageheight: 100%
-tags: ["philosophies",""]
+tags: ["philosophies"]
 title: The Science Behind Why Nice People Finish Last
 ---
 
