@@ -950,6 +950,11 @@ article.recent-reading:after {
     text-decoration: underline;
 }
 
+.main_content_footer {
+	width: 100%;
+	float: left;
+}
+
 /* ==========================================================================
    5. Single Post - When you click on an individual post
    ========================================================================== */

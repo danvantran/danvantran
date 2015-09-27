@@ -45,6 +45,9 @@
 		</main>
 	</div>
 </div>
+<div class="main_content_footer">
+	{{ partial "footer.html" . }}
+</div>
 {{ else }}
 <main id="content" class="content" role="main">
 
@@ -61,6 +64,5 @@
     {{ partial "pagination.html" $paginator }}
 
 </main>
-{{ end }}
-
 {{ partial "footer.html" . }}
+{{ end }}

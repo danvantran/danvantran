@@ -4,7 +4,7 @@
 		<div id="sidebar" class="recent-reading">
 			<!-- sidebar menu start-->
 			<ul>
-				<h5>Recent Reading</h5>
+				<h5>Recent Browsing</h5>
 				<!-- default options in the config start -->
 				{{ $currentNode := . }}
 				{{ range .Site.Menus.readingList }}
@@ -33,7 +33,7 @@
 				<!-- default options in the config end -->
 
 				<!-- recently read items pagination start -->
-				{{ range first 10 (where .Paginator.Pages "Type" "recent-reading") }}
+				{{ range first 5 (where .Paginator.Pages "Type" "recent-reading") }}
 					{{ if eq .Type "recent-reading" }}
 						{{ .Render "recent-reading-li" }}
 					{{ end }}
