@@ -33,7 +33,7 @@
 				<!-- default options in the config end -->
 
 				<!-- recently read items pagination start -->
-				{{ range first 5 (where .Paginator.Pages "Type" "recent-reading") }}
+				{{ range first 10 (where .Data.Pages "Type" "recent-reading") }}
 					{{ if eq .Type "recent-reading" }}
 						{{ .Render "recent-reading-li" }}
 					{{ end }}

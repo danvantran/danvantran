@@ -21,7 +21,8 @@
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
-{{ if eq .Paginator.PageNumber 1 }}
+{{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+{{ if eq $paginator.PageNumber 1 }}
 <div id="main_content">
 	<div id="recent-reading_content">
 		{{ partial "recent-reading.html" . }}
@@ -30,13 +31,11 @@
 	<div id="entries_content">
 		<main id="content" class="content" role="main">
 
-    		{{ $paginator := .Paginator }}
-
     		<div class="extra-pagination inner">
        			{{ partial "pagination.html" $paginator }}
     		</div>
 
-    		{{ range where .Paginator.Pages "Type" "post" }}
+    		{{ range $index, $page := $paginator.Pages }}
         		{{ .Render "li" }}
     		{{ end }}
 
@@ -51,13 +50,11 @@
 {{ else }}
 <main id="content" class="content" role="main">
 
-    {{ $paginator := .Paginator }}
-
     <div class="extra-pagination inner">
        	{{ partial "pagination.html" $paginator }}
     </div>
 
-	{{ range where .Paginator.Pages "Type" "post" }}
+	{{ range $index, $page := $paginator.Pages }}
         {{ .Render "li" }}
     {{ end }}
 
