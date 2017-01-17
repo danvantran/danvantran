@@ -7,7 +7,7 @@ build:
         flags: --buildDrafts=true
 deploy:
   steps:
-    - bugscal/new-ftp-deploy@0.1.0
+    - bugscal/new-ftp-deploy@0.1.0:
         destination: ftp://danvantran.com
         username: $USERNAME
         password: $PASSWORD
