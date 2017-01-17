@@ -7,7 +7,9 @@ build:
         flags: --buildDrafts=true
 deploy:
   steps:
-    - bugscal/new-ftp-deploy@0.1.0:
+    - install-packages:
+      packages: curl
+    - duleorlovic/ftp-deploy@1.0.1:
         destination: ftp://danvantran.com
         username: $USERNAME
         password: $PASSWORD
