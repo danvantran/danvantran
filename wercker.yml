@@ -8,6 +8,6 @@ build:
 deploy:
   steps:
     - duleorlovic/ftp-deploy@1.0.1:
-        destination: ftp://danvantran.com/
+        destination: ftp://danvantran.com
         username: $USERNAME
         password: $PASSWORD
